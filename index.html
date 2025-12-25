@@ -128,7 +128,39 @@
   </style>
 </head>
 <body>
+<div class="hero-logo">
+  <div class="hero-circle">C</div>
+  <div class="hero-text">ChatWise</div>
+</div>
   <main class="card">
+.hero-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.hero-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #43a047, #66bb6a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 30px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.hero-text {
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #1b5e20;
+}
 
     <!-- Logo row -->
     <div class="logo-row">
