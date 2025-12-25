@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stranger 1v1 Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #151c3a, #050510);
+      color: #f5f5ff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+    .card {
+      width: 100%;
+      max-width: 480px;
+      background: rgba(10, 12, 30, 0.95);
+      border-radius: 16px;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
+      padding: 24px 20px 20px;
+      border: 1px solid rgba(120, 130, 255, 0.4);
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #a7b0ff;
+      margin-bottom: 20px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(35, 206, 107, 0.1);
+      color: #6fffb3;
+      border: 1px solid rgba(111, 255, 179, 0.4);
+      margin-bottom: 12px;
+    }
+    ul {
+      list-style: none;
+      font-size: 13px;
+      margin-bottom: 20px;
+      color: #d1d5ff;
+    }
+    ul li {
+      padding-left: 16px;
+      position: relative;
+      margin-bottom: 6px;
+    }
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 2px;
+      color: #7d8bff;
+    }
+    .btn-primary {
+      width: 100%;
+      border: none;
+      border-radius: 999px;
+      padding: 12px 18px;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      background: linear-gradient(135deg, #6c5ce7, #00cec9);
+      color: #fdfdff;
+      cursor: pointer;
+      margin-bottom: 10px;
+      transition: transform 0.08s ease, box-shadow 0.08s ease, opacity 0.08s ease;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.45);
+    }
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.55);
+      opacity: 0.96;
+    }
+    .btn-primary:active {
+      transform: translateY(0);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+      opacity: 0.9;
+    }
+    .meta {
+      font-size: 11px;
+      color: #8a92d9;
+      text-align: center;
+      margin-top: 6px;
+      line-height: 1.4;
+    }
+    a {
+      color: #a5b4ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="pill">
+      🔒 Anonymous • 1v1 text
+    </div>
+    <h1>Talk to a random stranger</h1>
+    <p class="subtitle">
+      Click once, get matched with one random person, and start chatting instantly.
+    </p>
+
+    <ul>
+      <li>No login or signup.</li>
+      <li>1v1 rooms only, no public chat.</li>
+      <li>Messages are not stored permanently.</li>
+    </ul>
+
+    <button class="btn-primary" onclick="window.location.href='chat.html'">
+      Start chatting now
+    </button>
+
+    <p class="meta">
+      By using this site you agree to be respectful and follow local laws.
+      Do not share personal information.
+    </p>
+  </main>
+</body>
+</html>
